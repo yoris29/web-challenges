@@ -159,6 +159,45 @@ The final step - let's share your awesome work with the community!
 
 ---
 
+### 🔄 **Step 9: Stay Updated (Sync Fork)**
+
+After workshops, I'll add new challenges! Here's how to get them in your fork:
+
+**Method 1: Using GitHub Website (Easiest)**
+
+1. **Go to your fork** on GitHub
+2. **Look for "Sync fork"** button (usually shows "X commits behind")
+3. **Click "Sync fork"** → **"Update branch"**
+4. **Pull changes to your computer:**
+
+```bash
+git switch main
+git pull origin main
+```
+
+**Method 2: Using Terminal (More Advanced way)**
+
+```bash
+# Add the original repo as upstream (only do this once)
+git remote add upstream https://github.com/Adel2411/web-challenges.git
+
+# Switch to main branch
+git switch main
+
+# Get latest changes
+git fetch upstream
+git merge upstream/main
+
+# Push updates to your fork
+git push origin main
+```
+
+> 🎯 **When to sync:** Before starting each new challenge!
+
+> ✅ **Perfect!** You now have all the latest challenges.
+
+---
+
 ## 🎯 Quick Reference
 
 ### ❗ **Important Rules**
