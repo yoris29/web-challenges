@@ -1,34 +1,36 @@
-# 🏆 Challenge Title Here
+# 🏆 {CHALLENGE_TITLE}
 
-Welcome to this challenge! Below you'll find everything you need to get started, including setup instructions and how to submit your work.
+**Transform your backend development skills through hands-on Express.js challenges!**
 
----
-
-## 📖 Overview
-
-**Challenge Name:** `Your Challenge Title`
-**Track:** `Backend`
-**Level:** `Beginner / Intermediate / Advanced`
-**Goal:** Describe the task clearly — what the member will build or solve.
-
-> ✨ _Example Goal_: Build a to-do app with filtering, or create an API to manage users.
+Welcome to this exciting challenge! I've designed this experience to help you apply what you've learned in our workshops through practical server-side coding. Below you'll find everything you need to get started, including streamlined setup instructions and clear submission guidelines.
 
 ---
 
-## 🧠 Objectives
+## 📖 Challenge Overview
 
-By completing this challenge, you'll practice:
+- **Challenge Name:** `{CHALLENGE_NAME}`
+- **Track:** `Backend`
+- **Level:** `{LEVEL}`
+- **Goal:** {GOAL_DESCRIPTION}
 
-- ✅ Skill 1 (e.g., component state, Express routes)
-- ✅ Skill 2
-- ✅ Skill 3
+> ✨ _Example Goal_: Build a REST API for user management, or create a middleware authentication system.
 
 ---
 
-## 📁 Folder Structure
+## 🧠 Learning Objectives
+
+By completing this challenge, you'll master:
+
+- ✅ {SKILL_1}
+- ✅ {SKILL_2}
+- ✅ {SKILL_3}
+
+---
+
+## 📁 Project Structure
 
 ```bash
-challenge-name/
+{CHALLENGE_FOLDER_NAME}/
 ├── starter/           # Where you write your solution
 │   ├── setup.js       # Automatic setup script
 │   ├── package.json   # Project config and scripts
@@ -36,27 +38,32 @@ challenge-name/
 └── README.md          # Challenge instructions (this file)
 ```
 
+💡 **Pro Tip:** Each challenge includes a `starter/` folder where you'll build your solution.  
+The `solution/` folder becomes visible **after the deadline** for learning purposes.
+
 ---
 
 ## 🚀 Getting Started
 
-### 🛠 Requirements
+### 🛠 Prerequisites
 
 - Node.js (version 18+)
 - A code editor (we recommend [VS Code](https://code.visualstudio.com/))
 - A terminal (Linux/macOS/Windows)
 
-### ⚙️ Setup in One Command
+### ⚡ Lightning-Fast Setup
 
-Inside the `starter/` folder, run:
+Inside the `starter/` folder, run my custom setup command:
 
 ```bash
 npm run setup
 ```
 
-This will:
+🎉 **That's it!** My script handles package installation and dev server startup automatically.
 
-- Install dependencies
+This powerful script will:
+
+- Install all dependencies
 - Run any required initialization
 - Start the local dev server (if applicable)
 
@@ -64,44 +71,39 @@ This will:
 
 ---
 
-## ✅ What You Need to Do
+## 🎯 Your Mission
 
-List the specific tasks here:
-
-- [ ] Implement X feature
-- [ ] Connect to API Y
-- [ ] Add form validation
-- [ ] Refactor logic in `App.jsx`
+{TASK_LIST}
 
 ---
 
-## ❗ Rules
+## 📋 Challenge Rules
 
-- ❌ Do **not** touch the `solution/` folder — it’s only for review after the challenge ends.
+- ❌ Do **not** touch the `solution/` folder — it's only for review after the challenge ends.
 - ✅ Work only inside the `starter/` folder.
 - 🧹 Try to keep your code clean, commented, and readable.
 
 ---
 
-## 📦 Submission Steps
+## 🚀 Submission Process
 
-Once your work is ready:
+Once your backend masterpiece is ready:
 
-1. **Commit** your changes inside the `starter/` folder.
-2. **Push** your solution to your **own fork**.
-3. Create a **Pull Request** to the original repository.
+1. **📝 Commit** your changes inside the `starter/` folder.
+2. **🔄 Push** your solution to your **own fork**.
+3. **📤 Create** a **Pull Request** to the original repository.
 
 > 🏷 Make sure to **label your PR** with:
 >
 > - `backend`
-> - `challenge-01` (or whatever number)
+> - `{CHALLENGE_NUMBER}`
 
-See the full instructions in the [CONTRIBUTING.md](../../CONTRIBUTING.md) file.
+See the complete workflow in the [CONTRIBUTING.md](../../CONTRIBUTING.md) file.
 
 ---
 
-## 💬 Need Help?
+## 💬 Get Support & Connect
 
-- Ask in [GitHub Discussions](https://github.com/Adel2411/web-challenges/discussions)
-- Check if someone had the same issue
-- Help others and grow together 💙
+- 🗣️ Ask questions in [GitHub Discussions](https://github.com/Adel2411/web-challenges/discussions)
+- 🔍 Check if someone had the same issue
+- 🤝 Help others and grow together 💙
