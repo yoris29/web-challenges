@@ -1,0 +1,756 @@
+[2025-06-13T18:04:08.402Z] GET /posts - Headers: {
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "7cb79085-c1ce-42bf-ba33-dea14c4cda1e",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive"
+} - Body: no body
+
+[2025-06-13T18:04:42.832Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "7a63cdb4-b20d-4607-b05f-59082dbea718",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "105"
+} - Body: {
+  "title": "newest blog",
+  "content": "content of author numero tres",
+  "author": "yaya"
+}
+
+[2025-06-13T18:04:51.135Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "e6af080c-8d92-4675-8518-76f8a146dd66",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "105"
+} - Body: {
+  "title": "newest blog",
+  "content": "content of author numero tres",
+  "author": "yaya"
+}
+
+[2025-06-13T18:05:15.525Z] GET /posts?author=yaya - Headers: {
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "5c2efad7-dbdd-498c-b930-fd740dc881a9",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive"
+} - Body: no body
+
+[2025-06-13T18:05:45.614Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "857ea350-9d70-46bb-9c45-7686975816a7",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "112"
+} - Body: {
+  "title": "newest newest blog",
+  "content": "content of author numero tres",
+  "author": "yaya"
+}
+
+[2025-06-13T18:06:59.409Z] GET /posts?author=yaya - Headers: {
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "800f44e6-3395-45bb-934d-9b5af6307757",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive"
+} - Body: no body
+
+[2025-06-13T18:13:14.123Z] PUT /posts/684c596fc3ce311d05191399 - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "3d6f39a7-22dc-42d6-ab44-6d726aaabcbc",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "80"
+} - Body: {
+  "title": "dodod",
+  "content": "new content",
+  "author": "yaya"
+}
+
+[2025-06-13T18:13:27.212Z] PUT /posts/684c596fc3ce311d05191399 - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "6afcfada-d668-4baf-8818-2677adbc3026",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "28"
+} - Body: {
+  "title": "dododoo"
+}
+
+[2025-06-13T18:13:46.226Z] PUT /posts/684c596fc3ce311d05191399 - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "8d21c3f7-a017-48ad-a877-07d27e4d9f20",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "28"
+} - Body: {
+  "content": "newww"
+}
+
+[2025-06-13T18:13:53.767Z] PUT /posts/684c596fc3ce311d05191399 - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "3e81b707-437f-42d3-954b-43b8871a6bd6",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "23"
+} - Body: {
+  "content": ""
+}
+
+[2025-06-13T18:18:43.152Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "334456ae-d895-4c87-92cf-942b2b09ab0f",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "88"
+} - Body: {
+  "title": "newest newest blog",
+  "content": "content of author numero tres"
+}
+
+[2025-06-13T18:20:01.251Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "10e955b4-bfb7-44bf-99d2-9b34511a8f69",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "88"
+} - Body: {
+  "title": "newest newest blog",
+  "content": "content of author numero tres"
+}
+
+[2025-06-13T18:20:35.345Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "11e0447e-d48b-46d9-addc-1a929442bab1",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "88"
+} - Body: {
+  "title": "newest newest blog",
+  "content": "content of author numero tres"
+}
+
+[2025-06-13T18:21:07.862Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "8a336e2f-398d-4b20-9a64-980f21556231",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "88"
+} - Body: {
+  "title": "newest newest blog",
+  "content": "content of author numero tres"
+}
+
+[2025-06-13T18:21:49.524Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "30a7b052-a46d-43d4-9b1a-96fede09b0ae",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "88"
+} - Body: {
+  "title": "newest newest blog",
+  "content": "content of author numero tres"
+}
+
+[2025-06-13T18:21:54.683Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "8661f7ec-2363-45a1-8ccd-2fbd5958fa76",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "88"
+} - Body: {
+  "title": "newest newest blog",
+  "content": "content of author numero tres"
+}
+
+[2025-06-13T18:21:55.925Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "a188f015-c7fa-4598-a8e6-767d96f7a9ae",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "88"
+} - Body: {
+  "title": "newest newest blog",
+  "content": "content of author numero tres"
+}
+
+[2025-06-13T18:22:08.804Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "921a85d4-417d-42a9-a138-059c0bbb6fce",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "88"
+} - Body: {
+  "title": "newest newest blog",
+  "content": "content of author numero tres"
+}
+
+[2025-06-13T18:22:24.920Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "f964fc41-53ef-4be9-a23a-dd7de1751ab5",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "88"
+} - Body: {
+  "title": "newest newest blog",
+  "content": "content of author numero tres"
+}
+
+[2025-06-13T18:23:08.508Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "ec54271e-71d3-40a3-a04b-511d07192de5",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "88"
+} - Body: {
+  "title": "newest newest blog",
+  "content": "content of author numero tres"
+}
+
+[2025-06-13T18:23:17.276Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "c0e6e59f-3d4b-4621-a370-3cb03cdf2090",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "88"
+} - Body: {
+  "title": "newest newest blog",
+  "content": "content of author numero tres"
+}
+
+[2025-06-13T18:23:24.522Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "add7679b-f009-48d5-bb96-ae6c6a80fe97",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "43"
+} - Body: {
+  "title": "newest newest blog"
+}
+
+[2025-06-13T18:23:59.909Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "ea55a90d-2125-4008-939f-fe8d7735caad",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "43"
+} - Body: {
+  "title": "newest newest blog"
+}
+
+[2025-06-13T18:25:06.866Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "b94feba8-9995-4dc9-8798-84bcf429b09d",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "43"
+} - Body: {
+  "title": "newest newest blog"
+}
+
+[2025-06-13T18:25:17.957Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "4618fea4-2139-4e6d-92e2-426df04344f0",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "43"
+} - Body: {
+  "title": "newest newest blog"
+}
+
+[2025-06-13T18:25:31.736Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "64bed628-0d37-4c28-8fed-5df7155bb5ef",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "43"
+} - Body: {
+  "title": "newest newest blog"
+}
+
+[2025-06-13T18:25:48.153Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "536dc5a1-25b6-47b4-af4c-6e7d6add6245",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "43"
+} - Body: {
+  "title": "newest newest blog"
+}
+
+[2025-06-13T18:26:07.079Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "0f0df95a-4378-4546-a2c5-d5e26616a706",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "43"
+} - Body: {
+  "title": "newest newest blog"
+}
+
+[2025-06-13T18:26:29.312Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "2535cdb0-2c90-4568-a263-070e76eb9ad4",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "88"
+} - Body: {
+  "title": "newest newest blog",
+  "content": "content of author numero tres"
+}
+
+[2025-06-13T18:26:41.882Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "3f9ec541-ce05-4184-8554-1707baf6be8f",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "114"
+} - Body: {
+  "title": "newest newest blog",
+  "content": "content of author numero quatro",
+  "author": "yaya"
+}
+
+[2025-06-13T18:27:00.978Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "0585071a-3124-4475-9969-adc5a1a6fd10",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "90"
+} - Body: {
+  "title": "newest newest blog",
+  "content": "content of author numero quatro"
+}
+
+[2025-06-13T18:29:44.449Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "8bd12f50-7071-414a-8b26-e5ddfe883eb1",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "90"
+} - Body: {
+  "title": "newest newest blog",
+  "content": "content of author numero quatro"
+}
+
+[2025-06-13T18:29:51.609Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "0e3887db-a118-4ca5-a3dc-086e00ad1651",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "39"
+} - Body: {
+  "title": "newest newest blog"
+}
+
+[2025-06-13T18:29:57.232Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "a12e1a03-15b9-4c10-b1c2-f4c877910cb1",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "6"
+} - Body: no body
+
+[2025-06-13T18:32:02.733Z] GET /posts - Headers: {
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "03b5e37b-2bd3-4bd8-a9a5-061a21a857d2",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive"
+} - Body: no body
+
+[2025-06-13T18:32:26.360Z] GET /posts/684c567ca00cdc524a80c295 - Headers: {
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "7c85eeb2-3ed2-4c30-9785-f9cd247244b1",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive"
+} - Body: no body
+
+[2025-06-13T18:32:46.500Z] GET /posts?author=yaya - Headers: {
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "f239ff68-3ed4-4e61-93d6-432032d445ba",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive"
+} - Body: no body
+
+[2025-06-13T18:33:01.187Z] GET /posts?author=ansi - Headers: {
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "da645e30-2001-4e23-bf30-c3fa94431d55",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive"
+} - Body: no body
+
+[2025-06-13T18:33:34.101Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "718e6b88-53fc-4dec-ba9a-07313e8343cd",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "96"
+} - Body: {
+  "title": "",
+  "content": "content of author numero quatro",
+  "author": "yaya"
+}
+
+[2025-06-13T18:33:36.724Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "6cf216b4-c0aa-4045-9453-71a2e3786107",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "96"
+} - Body: {
+  "title": "",
+  "content": "content of author numero quatro",
+  "author": "yaya"
+}
+
+[2025-06-13T18:33:40.209Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "7278a7f3-6a8a-4757-bfa7-3c1a2182079c",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "99"
+} - Body: {
+  "title": "   ",
+  "content": "content of author numero quatro",
+  "author": "yaya"
+}
+
+[2025-06-13T18:35:39.679Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "03e12844-2f9b-4ac3-8dd0-110f12c35b55",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "99"
+} - Body: {
+  "title": "   ",
+  "content": "content of author numero quatro",
+  "author": "yaya"
+}
+
+[2025-06-13T18:35:48.820Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "b95c8763-eab8-40c2-839e-6c67fd6656a5",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "99"
+} - Body: {
+  "title": "   ",
+  "content": "content of author numero quatro",
+  "author": "yaya"
+}
+
+[2025-06-13T18:37:49.753Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "cb7d68ad-2ac6-4cb4-aec3-dd37b8a6cba3",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "99"
+} - Body: {
+  "title": "   ",
+  "content": "content of author numero quatro",
+  "author": "yaya"
+}
+
+[2025-06-13T18:37:56.745Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "5be96701-dd04-4aa9-be61-4c2f058b596a",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "70"
+} - Body: {
+  "title": "   ",
+  "content": "  ",
+  "author": "yaya"
+}
+
+[2025-06-13T18:40:09.633Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "075ca14c-4fb4-4ddb-b56d-83f5c2ee01a7",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "70"
+} - Body: {
+  "title": "   ",
+  "content": "  ",
+  "author": "yaya"
+}
+
+[2025-06-13T18:40:43.011Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "bd603117-ec14-4894-aab1-f3c390437128",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "70"
+} - Body: {
+  "title": "   ",
+  "content": "  ",
+  "author": "yaya"
+}
+
+[2025-06-13T18:40:48.064Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "1d9d4ab4-73f1-4ad6-aae1-9b4cc0f088ca",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "68"
+} - Body: {
+  "title": "   ",
+  "content": "  ",
+  "author": "  "
+}
+
+[2025-06-13T18:41:21.397Z] POST /posts - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "f2d8b351-0dbe-467e-8fea-cbfa07944562",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "70"
+} - Body: {
+  "title": "sup",
+  "content": "sup",
+  "author": "sup"
+}
+
+[2025-06-13T18:41:37.244Z] GET /posts?author=ansi - Headers: {
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "91b0fe84-23c4-4e01-9854-dedf43035f8a",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive"
+} - Body: no body
+
+[2025-06-13T18:41:42.736Z] GET /posts - Headers: {
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "83a2dbdc-2fac-43af-8c03-63e601440260",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive"
+} - Body: no body
+
+[2025-06-13T18:42:00.865Z] PUT /posts/684c59f12ab6abd515d44d25 - Headers: {
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "e94bab51-843c-4e6b-aac3-8d9954666e8f",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "26"
+} - Body: {
+  "title": "title"
+}
+
+[2025-06-13T18:42:39.750Z] DELETE /posts/684c59f12ab6abd515d44d25 - Headers: {
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "84b255ae-ea82-46b5-8abd-c57ae9113d28",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive"
+} - Body: no body
+
+[2025-06-13T18:42:45.890Z] DELETE /posts/684c59f12ab6abd515d44d29 - Headers: {
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2Y2ZWRjODE4YjQ4ODQ1YjZjOWRhN2MiLCJlbWFpbCI6Inlvb2RramV6bkBnbWFpbC5jb20iLCJpYXQiOjE3NDk4MjkyNjYsImV4cCI6MTc1MjQyMTI2Nn0.-jr_fFczURbbIg6InD5f5d8tw-imX8KqTq-gzbc86CA",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "76f6101b-78fb-498b-afa7-83fe3cdef674",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive"
+} - Body: no body
+
