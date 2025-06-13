@@ -45,7 +45,6 @@ By completing this challenge, you'll master:
 │   │   │   └── posts.js     # Blog posts array
 │   │   └── app.js           # Main Express application
 │   ├── package.json     # Project dependencies and scripts
-│   ├── .env.example     # Environment variables template
 │   └── README.md        # Challenge-specific instructions
 ├── solution/            # Reference solution (unlocked after deadline)
 └── README.md           # This file
@@ -76,10 +75,6 @@ cd 01-intro-to-express/starter
 # 2. Install project dependencies
 npm install
 
-# 3. Set up environment variables
-cp .env.example .env
-# Edit .env file with your configuration
-
 # 4. Start the development server
 npm run dev
 
@@ -90,7 +85,7 @@ npm run dev
 
 - `npm install` - Downloads and installs all the packages your project needs
 - `cp .env.example .env` - Creates your local environment configuration file
-- `npm run dev` - Starts the server with automatic restart on file changes (using nodemon)
+- `npm run dev` - Starts the server with automatic restart on file changes
 
 > 🔄 Troubleshooting: If you encounter errors, try deleting the `node_modules` folder and `package-lock.json`, then run `npm install` again.
 
@@ -148,6 +143,69 @@ Response (201 Created):
   "createdAt": "2025-06-12T12:00:00.000Z"
 }
 ```
+
+---
+
+## 🔧 Middleware Requirements
+
+Your API must implement three custom middleware functions that handle essential request processing:
+
+### 🪵 Logger Middleware (`middleware/logger.js`)
+
+Creates detailed request logs for debugging and monitoring:
+
+```javascript
+// Example log output:
+// [2025-01-15T10:30:45.123Z] GET /posts - Headers: {...} - Body: undefined
+// [2025-01-15T10:31:02.456Z] POST /posts - Headers: {...} - Body: {"title":"New Post","content":"..."}
+```
+
+**Requirements:**
+
+- Log request method (GET, POST, PUT, DELETE)
+- Log request route/path
+- Log request headers
+- Log request body (if present)
+- Include timestamp in ISO format
+- Apply to all routes
+
+### ✅ Validation Middleware (`middleware/validation.js`)
+
+Validates incoming requests without external libraries:
+
+**For POST /posts requests:**
+
+- `title` (required, string, non-empty)
+- `content` (required, string, non-empty)
+- `author` (required, string, non-empty)
+
+**For PUT /posts/:id requests:**
+
+- At least one field must be provided (`title`, `content`, or `author`)
+- All provided fields must be non-empty strings
+
+**Error Response:**
+
+```json
+{
+  "error": "Validation failed",
+  "message": "Missing required fields: title, content"
+}
+```
+
+### ⏱️ Timestamp Middleware (`middleware/timestamp.js`)
+
+Automatically manages timestamps for data operations:
+
+**For POST requests:**
+
+- Adds `createdAt` timestamp (ISO string)
+- Adds `updatedAt` timestamp (ISO string, same as createdAt)
+
+**For PUT requests:**
+
+- Updates `updatedAt` timestamp (ISO string)
+- Preserves original `createdAt` timestamp
 
 ---
 
