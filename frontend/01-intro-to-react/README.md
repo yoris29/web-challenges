@@ -8,7 +8,7 @@
 
 - **Challenge Name:** Productivity Pulse
 - **Track:** `Frontend`
-- **Level:** `Beginner+`
+- **Level:** `Beginner`
 - **Technologies:** React, HTML, CSS, JavaScript
 - **Goal:** Create a React app that tracks 25-minute focus sessions, lets users write short post-session notes, and gives them motivation through a like button.
 
@@ -202,7 +202,7 @@ npm run build
 3. 🔄 Push to your repository:
 
    ```bash
-   git push origin main
+   git push origin YOURUSERNAME/frontend-challenge-01 #or whatever branch you created
    ```
 
 4. 📤 Open a Pull Request with the title:  
