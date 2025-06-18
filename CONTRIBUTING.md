@@ -201,7 +201,7 @@ git fetch upstream
 git merge upstream/main
 
 # Push updates to your fork
-git push origin main
+git push origin YOURUSERNAME/challenge-01 #or whatever branch you created
 ```
 
 > 🎯 **When to sync:** Before starting each new challenge!
