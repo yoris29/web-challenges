@@ -161,13 +161,6 @@ Your questions and contributions make this community stronger! 🌟
 
 **Session Labels:**
 - 🎨 `frontend` / ⚡ `backend` → Track identification
-- 🌱 `beginner` / 🔥 `intermediate` / 🚀 `advanced` → Difficulty levels
-
-**Challenge Labels:**
-- 🎯 `feature-add` → Adding new functionality
-- 🐛 `bug-fix` → Fixing existing issues
-- 🎨 `ui-improvement` → Enhancing user interface
-- ⚡ `performance` → Optimization challenges
 
 ---
 
@@ -199,7 +192,5 @@ To maintain quality and learning integrity:
 **Happy coding, and welcome to your web development journey!** 💙
 
 _[Adel HB](https://github.com/Adel2411) | Creator of Web Journey_
-
-**Ready to transform your skills? Let's build something amazing together!** 🚀
 
 </div>
