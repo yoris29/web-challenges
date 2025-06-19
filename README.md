@@ -17,7 +17,8 @@ web-journey/
 │   │   │   └── README.md ─────── Workshop content
 │   │   ├── 02-css-fundamentals/
 │   │   └── ...
-│   └── 🎯 challenges/ ─────────── Frontend coding challenges
+│   ├── 🎯 challenges/ ─────────── Frontend coding challenges
+│   └── 📦 extra/ ────────────── Additional frontend challenges or resources
 │
 ├── ⚡ backend/
 │   ├── 📚 sessions/
@@ -25,7 +26,8 @@ web-journey/
 │   │   │   └── README.md ─────── Workshop content
 │   │   ├── 02-express-basics/
 │   │   └── ...
-│   └── 🎯 challenges/ ──────────── Backend coding challenges
+│   ├── 🎯 challenges/ ──────────── Backend coding challenges
+│   └── 📦 extra/ ─────────────── Additional backend challenges or resources
 │
 ├── 🎯 project/
 │   ├── frontend/ ─────────────── Main project files
@@ -38,7 +40,7 @@ web-journey/
 └── 🤝 CONTRIBUTING.md ───────── Contribution guide
 ```
 
-> 💡 **Learning Path:** Follow workshops in `frontend/sessions/` and `backend/sessions/`, apply knowledge through `CHALLENGES.md`, and build the main `project/`!
+> 💡 **Learning Path:** Follow workshops in `frontend/sessions/` and `backend/sessions/`, apply knowledge through `CHALLENGES.md`, explore additional resources in `extra/` folders, and build the main `project/`!
 
 ---
 
