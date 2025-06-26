@@ -14,16 +14,30 @@
 
 ## 📖 Table of Contents
 
-- [What is Mongoose?](#what-is-mongoose)
-- [Core Concepts](#core-concepts)
-- [Setting Up the Environment](#setting-up-the-environment)
-- [Database Connection](#database-connection)
-- [Schemas and Models](#schemas-and-models)
-- [CRUD Operations](#crud-operations)
-- [Relationships and Population](#relationships-and-population)
-- [Building a Complete API](#building-a-complete-api)
-- [Best Practices](#best-practices)
-- [Exercises](#exercises)
+- [🍃 ODMs with Mongoose \& MongoDB](#-odms-with-mongoose--mongodb)
+  - [📖 Table of Contents](#-table-of-contents)
+  - [🤔 What is Mongoose?](#-what-is-mongoose)
+    - [Why Mongoose? 🎯](#why-mongoose-)
+    - [Key Benefits ✨](#key-benefits-)
+  - [🧩 Core Concepts](#-core-concepts)
+    - [The Mongoose Trinity](#the-mongoose-trinity)
+    - [Schema Types 📊](#schema-types-)
+  - [🛠️ Setting Up the Environment](#️-setting-up-the-environment)
+    - [1. Project Initialization](#1-project-initialization)
+    - [2. Environment Configuration](#2-environment-configuration)
+  - [🔌 Database Connection](#-database-connection)
+  - [📋 Schemas and Models](#-schemas-and-models)
+    - [Course Model with Advanced Schema](#course-model-with-advanced-schema)
+    - [Lesson Model](#lesson-model)
+  - [📝 CRUD Operations](#-crud-operations)
+    - [Complete CRUD with Advanced Features](#complete-crud-with-advanced-features)
+  - [🔗 Relationships and Population](#-relationships-and-population)
+    - [Advanced Population Examples](#advanced-population-examples)
+  - [🏗️ Building a Complete API](#️-building-a-complete-api)
+    - [Express App Setup](#express-app-setup)
+  - [🎯 Best Practices](#-best-practices)
+    - [Performance Optimization](#performance-optimization)
+    - [Security Best Practices](#security-best-practices)
 
 ## 🤔 What is Mongoose?
 
@@ -721,26 +735,6 @@ const validateCourse = (req, res, next) => {
   next();
 };
 ```
-
-## 🧪 Exercises
-
-### Exercise 1: Basic CRUD (Beginner)
-1. Set up MongoDB connection
-2. Create Course and Lesson models  
-3. Implement basic CRUD operations
-4. Test with a REST client
-
-### Exercise 2: Advanced Features (Intermediate)
-1. Add User model for instructors
-2. Implement course enrollment
-3. Add population for complex queries
-4. Create aggregation pipelines
-
-### Exercise 3: Production API (Advanced)
-1. Add authentication and authorization
-2. Implement rate limiting and validation
-3. Add comprehensive error handling
-4. Write unit and integration tests
 
 ---
 

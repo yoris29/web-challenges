@@ -24,6 +24,12 @@
 - 📖 **[README](./backend/sessions/01-intro-to-express/README.md)**
 - 🎥 **[Record](https://drive.google.com/file/d/1NEGDAn89QSvQePYoQxzwO4rNXw6IFE11/view?usp=drive_link)** | 🔗 **[Code Repo](https://github.com/ademmenh/express-workshop)**
 
+### Session 02: ORMs & ODMs
+
+- 🎯 **Topics:** ORM vs ODM, Mongoose, Prisma
+- 📖 **[README](./backend/sessions/02-orms-and-odms/README.md)**
+- 🎥 **[Record](https://drive.google.com/file/d/1YVY3PxgXvpLacEGupo1fQ3IAdqyAUsHB/view?usp=drive_link)** | 🔗 **[Code Repo](https://github.com/Adel2411/web-journey/tree/main/backend/sessions/02-orms-and-odms/examples)**
+
 ## 📋 Quick Start
 
 1. Choose your track (Frontend/Backend)
