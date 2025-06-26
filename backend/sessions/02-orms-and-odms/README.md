@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![ORMs and ODMs Banner](./assets/orm-odm-banner.png)
+![ORMs and ODMs Banner](./images/orm-odm-banner.webp)
 
 *Master Object-Relational Mapping and Object-Document Mapping in Node.js*
 

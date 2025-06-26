@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Mongoose Banner](./assets/mongoose-banner.png)
+![Mongoose Banner](https://miro.medium.com/v2/resize:fit:1050/1*OYpEW3PMltGC2MVvJ-5QTw.png)
 
 *Master Object-Document Mapping with the most popular Node.js ODM*
 
