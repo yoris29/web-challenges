@@ -33,11 +33,13 @@ By completing this challenge, you'll build:
 You'll be working in the existing Vite React project with Tailwind CSS already configured.
 
 1. **Navigate to your frontend directory:**
+
    ```bash
    cd project/frontend
    ```
 
 2. **Install required dependencies:**
+
    ```bash
    npm install
    ```
@@ -74,6 +76,7 @@ You'll be working in the existing Vite React project with Tailwind CSS already c
 **Create Note List** (`src/components/notes/NoteList.jsx`):
 
 1. **Display all notes:**
+
    - Import and use the sample notes data
    - Store notes in state using useState
    - Display notes in a responsive grid layout
@@ -87,6 +90,7 @@ You'll be working in the existing Vite React project with Tailwind CSS already c
 **Create Note Item** (`src/components/notes/NoteItem.jsx`):
 
 1. **Display individual note (matching backend data structure):**
+
    - Show note title prominently
    - Display note content (limit to first 100 characters if long)
    - Show author name if available
@@ -123,6 +127,7 @@ You'll be working in the existing Vite React project with Tailwind CSS already c
 ## 🎯 Required Components & Features
 
 ### Note Display:
+
 - [ ] Shows list of all sample notes
 - [ ] Displays note title, content preview, and author
 - [ ] Shows creation date in readable format (using createdAt)
@@ -131,6 +136,7 @@ You'll be working in the existing Vite React project with Tailwind CSS already c
 - [ ] Shows appropriate message when no notes exist
 
 ### User Interface:
+
 - [ ] Beautiful design using Tailwind CSS
 - [ ] Responsive layout that works on mobile and desktop
 - [ ] Clean typography and good spacing
@@ -138,6 +144,7 @@ You'll be working in the existing Vite React project with Tailwind CSS already c
 - [ ] Professional appearance
 
 ### Interactivity:
+
 - [ ] Toggle between "All Notes" and "My Notes" view
 - [ ] Display total note count
 - [ ] Smooth hover animations on note cards
@@ -147,62 +154,69 @@ You'll be working in the existing Vite React project with Tailwind CSS already c
 ## 📝 Component Examples
 
 ### Sample Notes Data (API-Compatible Format):
+
 ```javascript
 // src/data/sampleNotes.js - Matches backend API response structure
 export const sampleNotes = [
   {
     id: 1,
     title: "Welcome to CollabNote",
-    content: "This is your first note in CollabNote! You can create, edit, and share notes with your team. This platform is designed to help you collaborate effectively and keep all your important information organized.",
+    content:
+      "This is your first note in CollabNote! You can create, edit, and share notes with your team. This platform is designed to help you collaborate effectively and keep all your important information organized.",
     authorName: "John Doe",
     isPublic: true,
     createdAt: "2024-01-15T10:30:00.000Z",
-    updatedAt: "2024-01-15T10:30:00.000Z"
+    updatedAt: "2024-01-15T10:30:00.000Z",
   },
   {
     id: 2,
     title: "Meeting Notes - Q1 Planning",
-    content: "Discussion points for Q1 planning session. Key objectives include increasing user engagement, improving platform performance, and launching new collaboration features.",
+    content:
+      "Discussion points for Q1 planning session. Key objectives include increasing user engagement, improving platform performance, and launching new collaboration features.",
     authorName: "Sarah Smith",
     isPublic: false,
     createdAt: "2024-01-14T14:20:00.000Z",
-    updatedAt: "2024-01-14T14:20:00.000Z"
+    updatedAt: "2024-01-14T14:20:00.000Z",
   },
   {
     id: 3,
     title: "React Best Practices",
-    content: "Important guidelines for React development: Use functional components, leverage hooks properly, keep components small and focused, and always handle loading states.",
+    content:
+      "Important guidelines for React development: Use functional components, leverage hooks properly, keep components small and focused, and always handle loading states.",
     authorName: "Mike Wilson",
     isPublic: true,
     createdAt: "2024-01-13T09:15:00.000Z",
-    updatedAt: "2024-01-13T09:15:00.000Z"
+    updatedAt: "2024-01-13T09:15:00.000Z",
   },
   {
     id: 4,
     title: "CollabNote Features Overview",
-    content: "Explore the key features of CollabNote: Real-time collaboration, rich text editing, file attachments, and more. Enhance your productivity and teamwork with these powerful tools.",
+    content:
+      "Explore the key features of CollabNote: Real-time collaboration, rich text editing, file attachments, and more. Enhance your productivity and teamwork with these powerful tools.",
     authorName: "Jane Cooper",
     isPublic: true,
     createdAt: "2024-01-12T11:00:00.000Z",
-    updatedAt: "2024-01-12T11:00:00.000Z"
+    updatedAt: "2024-01-12T11:00:00.000Z",
   },
   {
     id: 5,
     title: "Private Note Example",
-    content: "This is an example of a private note. It contains sensitive information that should not be shared with others.",
+    content:
+      "This is an example of a private note. It contains sensitive information that should not be shared with others.",
     authorName: "John Doe",
     isPublic: false,
     createdAt: "2024-01-11T08:45:00.000Z",
-    updatedAt: "2024-01-11T08:45:00.000Z"
-  }
+    updatedAt: "2024-01-11T08:45:00.000Z",
+  },
 ];
 ```
 
 ### Updated App Component Structure:
+
 ```jsx
 // src/App.jsx - Updated to include CollabNote interface
-import Header from './components/layout/Header';
-import NoteList from './components/notes/NoteList';
+import Header from "./components/layout/Header";
+import NoteList from "./components/notes/NoteList";
 
 function App() {
   return (
@@ -219,6 +233,7 @@ export default App;
 ```
 
 ### Header Component Structure:
+
 ```jsx
 // src/components/layout/Header.jsx
 const Header = () => {
@@ -232,11 +247,9 @@ const Header = () => {
               Beta
             </span>
           </div>
-          
+
           {/* Placeholder for future auth elements */}
-          <div className="text-sm text-gray-600">
-            Welcome, Guest!
-          </div>
+          <div className="text-sm text-gray-600">Welcome, Guest!</div>
         </div>
       </div>
     </header>
@@ -247,49 +260,51 @@ export default Header;
 ```
 
 ### NoteList Component Structure:
+
 ```jsx
 // src/components/notes/NoteList.jsx - Uses Tailwind classes
-import { useState } from 'react';
-import { sampleNotes } from '../../data/sampleNotes';
-import NoteItem from './NoteItem';
+import { useState } from "react";
+import { sampleNotes } from "../../data/sampleNotes";
+import NoteItem from "./NoteItem";
 
 const NoteList = () => {
   const [notes] = useState(sampleNotes);
-  const [viewMode, setViewMode] = useState('all'); // 'all' or 'my'
-  
+  const [viewMode, setViewMode] = useState("all"); // 'all' or 'my'
+
   // Filter notes based on view mode (simulating "My Notes" for John Doe)
-  const filteredNotes = viewMode === 'my' 
-    ? notes.filter(note => note.authorName === 'John Doe') // Current user simulation
-    : notes;
-  
+  const filteredNotes =
+    viewMode === "my"
+      ? notes.filter((note) => note.authorName === "John Doe") // Current user simulation
+      : notes;
+
   return (
     <div className="max-w-6xl mx-auto p-6">
       {/* Header with toggle and counter */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
         <h2 className="text-2xl font-bold text-gray-800">
-          {viewMode === 'all' ? 'All Notes' : 'My Notes'}
+          {viewMode === "all" ? "All Notes" : "My Notes"}
           <span className="text-sm font-normal text-gray-500 ml-2">
             ({filteredNotes.length} notes)
           </span>
         </h2>
-        
+
         <div className="flex gap-2">
           <button
-            onClick={() => setViewMode('all')}
+            onClick={() => setViewMode("all")}
             className={`px-4 py-2 rounded-lg transition-colors ${
-              viewMode === 'all' 
-                ? 'bg-blue-500 text-white' 
-                : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+              viewMode === "all"
+                ? "bg-blue-500 text-white"
+                : "bg-gray-200 text-gray-700 hover:bg-gray-300"
             }`}
           >
             All Notes
           </button>
           <button
-            onClick={() => setViewMode('my')}
+            onClick={() => setViewMode("my")}
             className={`px-4 py-2 rounded-lg transition-colors ${
-              viewMode === 'my' 
-                ? 'bg-blue-500 text-white' 
-                : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+              viewMode === "my"
+                ? "bg-blue-500 text-white"
+                : "bg-gray-200 text-gray-700 hover:bg-gray-300"
             }`}
           >
             My Notes
@@ -302,12 +317,14 @@ const NoteList = () => {
         <div className="text-center py-12">
           <p className="text-gray-500 text-lg">No notes found</p>
           <p className="text-gray-400 text-sm mt-2">
-            {viewMode === 'my' ? 'You haven\'t created any notes yet.' : 'No notes available.'}
+            {viewMode === "my"
+              ? "You haven't created any notes yet."
+              : "No notes available."}
           </p>
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredNotes.map(note => (
+          {filteredNotes.map((note) => (
             <NoteItem key={note.id} note={note} />
           ))}
         </div>
@@ -320,23 +337,24 @@ export default NoteList;
 ```
 
 ### NoteItem Component Structure (API-Ready):
+
 ```jsx
 // src/components/notes/NoteItem.jsx - Uses backend API field names
 const NoteItem = ({ note }) => {
   // Format the date to be readable (uses createdAt from API)
   const formatDate = (dateString) => {
     const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'short',
-      day: 'numeric'
+    return date.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
     });
   };
 
   // Truncate content if it's too long
   const truncateContent = (content, maxLength = 100) => {
     if (content.length <= maxLength) return content;
-    return content.substring(0, maxLength) + '...';
+    return content.substring(0, maxLength) + "...";
   };
 
   return (
@@ -346,12 +364,14 @@ const NoteItem = ({ note }) => {
         <h3 className="text-lg font-semibold text-gray-800 flex-1 pr-2">
           {note.title}
         </h3>
-        <span className={`px-2 py-1 rounded-full text-xs font-medium whitespace-nowrap ${
-          note.isPublic 
-            ? 'bg-green-100 text-green-800' 
-            : 'bg-orange-100 text-orange-800'
-        }`}>
-          {note.isPublic ? 'Public' : 'Private'}
+        <span
+          className={`px-2 py-1 rounded-full text-xs font-medium whitespace-nowrap ${
+            note.isPublic
+              ? "bg-green-100 text-green-800"
+              : "bg-orange-100 text-orange-800"
+          }`}
+        >
+          {note.isPublic ? "Public" : "Private"}
         </span>
       </div>
 
@@ -377,7 +397,9 @@ export default NoteItem;
 ## 🔗 Backend Integration Preparation
 
 ### API-Ready Data Structure
+
 This challenge uses the exact same data structure that your backend API will provide:
+
 - `id` - Unique identifier for each note
 - `title` - Note title
 - `content` - Note content/body
@@ -387,7 +409,9 @@ This challenge uses the exact same data structure that your backend API will pro
 - `updatedAt` - ISO timestamp when note was last updated
 
 ### Future API Integration
+
 In Challenge 2, you'll replace the static sample data with real API calls:
+
 - Fetch notes from `GET /api/notes`
 - Create notes via `POST /api/notes`
 - Update notes via `PUT /api/notes/:id`
@@ -400,6 +424,7 @@ In Challenge 2, you'll replace the static sample data with real API calls:
 Tailwind CSS is already configured in your project! Here are the key classes to use:
 
 ### Key Tailwind Classes:
+
 - **Layout**: `grid`, `flex`, `max-w-6xl`, `mx-auto`, `p-6`
 - **Colors**: `bg-white`, `text-gray-800`, `bg-blue-500`, `text-white`
 - **Spacing**: `mb-6`, `gap-6`, `px-4 py-2`
@@ -408,6 +433,7 @@ Tailwind CSS is already configured in your project! Here are the key classes to 
 - **Responsive**: `md:grid-cols-2`, `lg:grid-cols-3`
 
 ### Design Guidelines:
+
 - Use consistent spacing with Tailwind's spacing scale
 - Implement responsive breakpoints for mobile-first design
 - Add subtle hover effects for better user experience
@@ -421,6 +447,7 @@ Tailwind CSS is already configured in your project! Here are the key classes to 
 ### Manual Testing Checklist:
 
 **Basic Functionality:**
+
 - [ ] Page loads without errors (`npm run dev`)
 - [ ] Displays all sample notes correctly (matching backend structure)
 - [ ] Shows each note's title, content preview, and metadata
@@ -429,6 +456,7 @@ Tailwind CSS is already configured in your project! Here are the key classes to 
 - [ ] Empty state shows when filtering results in no notes
 
 **Visual Design:**
+
 - [ ] Notes are displayed in a clean, grid layout
 - [ ] Cards have proper shadows and hover effects
 - [ ] Public/private indicators are clearly visible (green/orange)
@@ -436,12 +464,15 @@ Tailwind CSS is already configured in your project! Here are the key classes to 
 - [ ] Layout is responsive on mobile and desktop
 
 **Interactivity:**
+
 - [ ] Hover effects work on note cards
 - [ ] Toggle buttons change appearance when active
 - [ ] Smooth transitions and animations work
 
 ### 🔗 Integration Readiness
+
 Your component structure should be ready for:
+
 - API integration in future challenges
 - Form components for creating/editing notes
 - Authentication features
@@ -454,11 +485,13 @@ Your component structure should be ready for:
 If you finish early, try these additional features:
 
 1. **Enhanced UI:**
+
    - Add loading skeleton components (for future API integration)
    - Implement a search bar (filter notes by title/content)
    - Add sorting options (by date, title, author)
 
 2. **Better Interactions:**
+
    - Add a "favorite" heart icon that can be clicked
    - Implement note cards that expand on click to show full content
    - Add smooth animations using Tailwind transitions
@@ -493,23 +526,6 @@ project/frontend/
 
 ---
 
-## 🔮 Future Extensions
-
-This challenge sets up the foundation for future features:
-
-- **Challenge 2**: Add forms to create and edit notes + connect to backend API
-- **Challenge 3**: User authentication and personal notes (both frontend and backend)
-- **Challenge 4**: Real-time updates and collaboration
-- **Challenge 5**: Rich text editing and file attachments
-
-Your component structure will be extended to support:
-- API integration for real data
-- Form handling for note creation/editing
-- User authentication state
-- Real-time collaboration features
-
----
-
 ## 📤 Submission
 
 1. **Test your application** by running `npm run dev` in the project/frontend directory
@@ -536,5 +552,5 @@ Your component structure will be extended to support:
 **🎉 Ready to bring CollabNote to life with React? Let's start building!**
 
 > **Next:** Challenge 2 will introduce forms and API integration for creating and editing notes!
-> 
+>
 > **🔗 Related:** Complete **Backend Challenge 1** to build the API that will power this interface!

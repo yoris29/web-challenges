@@ -11,7 +11,7 @@ Welcome to your first backend challenge! You'll create the core API that powers 
 By completing this challenge, you'll build:
 
 - ⚙️ **Express.js API setup** with proper middleware configuration
-- 🗃️ **PostgreSQL database** with Prisma ORM integration  
+- 🗃️ **PostgreSQL database** with Prisma ORM integration
 - 📝 **Basic note CRUD operations** (Create, Read, Update, Delete)
 - 🧪 **API testing** with proper request/response handling
 - 🛡️ **Basic validation** and error handling
@@ -35,17 +35,20 @@ By completing this challenge, you'll build:
 You'll be working in the existing Express project structure.
 
 1. **Navigate to your backend directory:**
+
    ```bash
    cd project/backend
    ```
 
 2. **Install Prisma and database dependencies:**
+
    ```bash
    npm install prisma @prisma/client cors dotenv
    npx prisma init
    ```
 
 3. **Set up your environment variables:**
+
    - Copy the `.env.example` file to `.env`:
      ```bash
      cp .env.example .env
@@ -57,6 +60,7 @@ You'll be working in the existing Express project structure.
    - Replace `username`, `password`, and database name with your actual PostgreSQL credentials
 
 4. **Create your database schema** in `prisma/schema.prisma`:
+
    - `Note` model with fields: id, title, content, authorName, isPublic, createdAt, updatedAt
    - Ensure field names match what the frontend expects
 
@@ -69,6 +73,7 @@ You'll be working in the existing Express project structure.
 ### ⚙️ **Task 2: Express Server Setup**
 
 1. **Update the main server file** (`src/app.js`):
+
    - Configure CORS to allow frontend connections (port 5173 for Vite)
    - Add dotenv configuration
    - Set up basic error handling
@@ -87,23 +92,27 @@ You'll be working in the existing Express project structure.
 **Create note routes** (`src/routes/notes.js`):
 
 1. **GET /api/notes**
+
    - Return all notes from database
    - Include all note information
    - Handle empty database case
    - Format response for frontend consumption
 
 2. **POST /api/notes**
+
    - Accept: title, content, authorName (optional), isPublic (optional, default true)
    - Validate required fields (title, content)
    - Create note in database
    - Return created note with generated ID and timestamps
 
 3. **GET /api/notes/:id**
+
    - Return specific note by ID
    - Return 404 if note doesn't exist
    - Include all note details
 
 4. **PUT /api/notes/:id**
+
    - Accept: title, content, authorName, isPublic
    - Update existing note with new updatedAt timestamp
    - Return updated note
@@ -134,32 +143,36 @@ DELETE /api/notes/:id       # Delete note (for frontend deletion)
 ## 📝 Sample Request/Response Examples
 
 ### Get All Notes (Frontend will display these)
+
 ```javascript
 // GET /api/notes
 // Response (matches frontend data structure)
 [
   {
-    "id": 1,
-    "title": "Welcome to CollabNote",
-    "content": "This is your first note in CollabNote! You can create, edit, and share notes with your team.",
-    "authorName": "John Doe",
-    "isPublic": true,
-    "createdAt": "2024-01-15T10:30:00.000Z",
-    "updatedAt": "2024-01-15T10:30:00.000Z"
+    id: 1,
+    title: "Welcome to CollabNote",
+    content:
+      "This is your first note in CollabNote! You can create, edit, and share notes with your team.",
+    authorName: "John Doe",
+    isPublic: true,
+    createdAt: "2024-01-15T10:30:00.000Z",
+    updatedAt: "2024-01-15T10:30:00.000Z",
   },
   {
-    "id": 2,
-    "title": "React Best Practices",
-    "content": "Important guidelines for React development: Use functional components, leverage hooks properly...",
-    "authorName": "Sarah Smith",
-    "isPublic": true,
-    "createdAt": "2024-01-14T14:20:00.000Z",
-    "updatedAt": "2024-01-14T14:20:00.000Z"
-  }
-]
+    id: 2,
+    title: "React Best Practices",
+    content:
+      "Important guidelines for React development: Use functional components, leverage hooks properly...",
+    authorName: "Sarah Smith",
+    isPublic: true,
+    createdAt: "2024-01-14T14:20:00.000Z",
+    updatedAt: "2024-01-14T14:20:00.000Z",
+  },
+];
 ```
 
 ### Create Note (Future frontend forms will use this)
+
 ```javascript
 // POST /api/notes
 {
@@ -186,19 +199,23 @@ DELETE /api/notes/:id       # Delete note (for frontend deletion)
 ## 🔗 Frontend Integration
 
 ### CORS Configuration
+
 Make sure your Express server allows requests from the React frontend:
 
 ```javascript
 // In your src/app.js
-import cors from 'cors';
+import cors from "cors";
 
-app.use(cors({
-  origin: 'http://localhost:5173', // Vite dev server URL
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: "http://localhost:5173", // Vite dev server URL
+    credentials: true,
+  }),
+);
 ```
 
 ### Environment Setup
+
 Your updated `src/app.js` should look like this:
 
 ```javascript
@@ -214,10 +231,12 @@ const PORT = process.env.PORT || 5000;
 const app = express();
 
 // Middleware
-app.use(cors({
-  origin: 'http://localhost:5173', // Vite frontend URL
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: "http://localhost:5173", // Vite frontend URL
+    credentials: true,
+  }),
+);
 app.use(express.json());
 
 // Routes
@@ -230,7 +249,7 @@ app.use("/api/notes", notesRouter);
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
-  res.status(500).json({ error: 'Something went wrong!' });
+  res.status(500).json({ error: "Something went wrong!" });
 });
 
 app.listen(PORT, () => {
@@ -239,7 +258,9 @@ app.listen(PORT, () => {
 ```
 
 ### Data Format Consistency
+
 Ensure your API responses match the data structure the frontend expects:
+
 - Use consistent field names (id, title, content, authorName, isPublic, createdAt, updatedAt)
 - Return proper HTTP status codes
 - Include all necessary fields in responses
@@ -260,6 +281,7 @@ Ensure your API responses match the data structure the frontend expects:
 8. **Test error cases** - should handle non-existent IDs properly
 
 ### Test Checklist:
+
 - [ ] Can create notes with valid data
 - [ ] Cannot create notes without required fields
 - [ ] Can retrieve all notes (matching frontend sample data format)
@@ -272,7 +294,9 @@ Ensure your API responses match the data structure the frontend expects:
 - [ ] Server handles database connection errors
 
 ### 🔗 Integration Testing
+
 Once you complete this challenge:
+
 1. Start your backend server (`npm run dev` - uses node --watch)
 2. The frontend from **Frontend Challenge 1** should be able to connect and display your notes
 3. Future frontend challenges will add forms to create/edit notes using your API
@@ -284,11 +308,13 @@ Once you complete this challenge:
 If you finish early, try these additional features:
 
 1. **Enhanced Validation**
+
    - Add minimum length requirements for title and content
    - Validate that title is not empty or just whitespace
    - Add maximum length limits
 
 2. **Frontend-Friendly Features**
+
    - Add pagination support for large note lists
    - Add search functionality by title or content
    - Add sorting options (newest first, alphabetical)
@@ -321,23 +347,6 @@ project/backend/
 
 ---
 
-## 🔮 Future Extensions
-
-This challenge sets up the foundation for future features:
-
-- **Challenge 2**: User authentication and note ownership (both frontend and backend)
-- **Challenge 3**: Real-time collaboration with WebSockets
-- **Challenge 4**: File uploads and rich content
-- **Challenge 5**: Note sharing and permissions
-
-The API structure you build here will be extended in future challenges to support:
-- User authentication endpoints
-- Protected routes
-- Real-time updates
-- File upload handling
-
----
-
 ## 📤 Submission
 
 1. **Test your API thoroughly** using Postman or similar tool
@@ -361,6 +370,6 @@ The API structure you build here will be extended in future challenges to suppor
 **🎉 Ready to build the foundation of CollabNote's backend? Let's get started!**
 
 > **Next:** Once you complete this challenge, Challenge 2 will introduce user authentication and note ownership!
-> 
+>
 > **🔗 Related:** Complete **Frontend Challenge 1** to build the UI that will connect to this API!
 > **🔗 Related:** Complete **Frontend Challenge 1** to build the UI that will connect to this API!
