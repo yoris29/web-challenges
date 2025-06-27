@@ -10,12 +10,13 @@ Welcome to **Web Journey Challenges**! These progressive or extra challenges hel
 
 ### 🚀 Project Challenges
 
-#### Challenge F01: Project Structure & Basic Layout
-> Comming Soon...
+#### Challenge 01: React Foundation & Component Structure
+- 🎯 **Topics:** JSX, Props, state, hooks, event, ...ect
+- 📖 **[README](./frontend/challenges/challenge-01.md)**
 
 ### 🏆 Extra Challenges
 
-#### Challenge 01: Intro to React
+#### Intro to React
 - 🎯 **Topics:** JSX, Props, state, hooks, event, ...ect
 - 📖 **[README](./frontend/extra/intro-to-react/README.md)**
 
@@ -25,12 +26,13 @@ Welcome to **Web Journey Challenges**! These progressive or extra challenges hel
 
 ### 🚀 Project Challenges
 
-#### Challenge B01: Server Setup & Basic Routes
-> Comming Soon...
+#### Challenge 01: Express API & Database Foundation
+- 🎯 **Topics:** Express server, routing, middleware, ORM, Database, ...ect
+- 📖 **[README](./backend/challenges/challenge-01.md)**
 
 ### 🏆 Extra Challenges
 
-#### Challenge 01: Intro to Express.js
+#### Intro to Express.js
 - 🎯 **Topics:** Express server, basic routing, middleware setup
 - 📖 **[README](./backend/extra/intro-to-express/README.md)**
 
