@@ -754,3 +754,17 @@
   "connection": "keep-alive"
 } - Body: no body
 
+[2025-06-13T19:10:33.125Z] POST /login - Headers: {
+  "content-type": "application/json",
+  "user-agent": "PostmanRuntime/7.44.0",
+  "accept": "*/*",
+  "postman-token": "f6208b66-bea5-4d3e-a4d8-40219565027e",
+  "host": "localhost:3000",
+  "accept-encoding": "gzip, deflate, br",
+  "connection": "keep-alive",
+  "content-length": "69"
+} - Body: {
+  "email": "yoodkjezn@gmail.com",
+  "password": "supsup99"
+}
+
