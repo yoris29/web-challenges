@@ -59,4 +59,44 @@ const createNote = async (req, res) => {
   }
 };
 
+const editNote = async (req, res) => {
+  const { id } = req.params;
+  const { title, content, authorName, isPublic } = req.body;
+
+  const isTitleValid = typeof title === "string" && title.trim() !== "";
+  const isContentValid = typeof content === "string" && content.trim() !== "";
+  const isAuthorNameValid =
+    typeof authorName === "string" && authorName.trim() !== "";
+  const isPublicValid = typeof isPublic === "boolean";
+
+  if (!isTitleValid && !isContentValid && !isAuthorValid && !isPublicValid) {
+    return res.status(400).json({
+      error: true,
+      msg: "You must provide at least one valid field (title, content, author or isPublic)",
+    });
+  }
+
+  try {
+    const updatedFields = {};
+    isTitleValid ? (updatedFields.title = title) : "";
+    isContentValid ? (updatedFields.content = content) : "";
+    isAuthorNameValid ? (updatedFields.authorName = authorName) : "";
+    isPublicValid ? (updatedFields.isPublic = isPublic) : "";
+
+    const note = await prisma.note.update({
+      where: { id: parseInt(id) },
+      data: updatedFields,
+    });
+
+    if (!note) {
+      return res.status(404).json("Note not found");
+    }
+
+    return res.status(200).json({ msg: "Note updated successfully", note });
+  } catch (err) {
+    console.log(err);
+    return res.status(500).json("Internal server error");
+  }
+};
+
 export default { getAllNotes, createNote, getNote, editNote };
