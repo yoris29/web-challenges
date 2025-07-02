@@ -3,7 +3,6 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../src/generated/prisma"
 }
 
 datasource db {
@@ -14,9 +13,9 @@ datasource db {
 model Note {
   id         Int      @id @default(autoincrement())
   title      String
-  Content    String
-  authorName String
-  isPublic   Boolean  @default(false)
+  content    String
+  authorName String?
+  isPublic   Boolean  @default(true)
   createdAt  DateTime @default(now())
   updatedAt  DateTime @default(now()) @updatedAt
 }
