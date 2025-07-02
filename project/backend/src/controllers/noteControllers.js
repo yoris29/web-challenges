@@ -1,6 +1,6 @@
 import prisma from "../prisma-client.js";
 
-const getAllNotes = async (req, res) => {
+const getAllNotes = async (req, res, next) => {
   try {
     const notes = await prisma.note.findMany({
       orderBy: { createdAt: "desc" },
@@ -14,12 +14,11 @@ const getAllNotes = async (req, res) => {
 
     return res.status(200).json(notes);
   } catch (err) {
-    console.log(err);
-    return res.status(500).json({ err: true, msg: "Internal server error" });
+    next(err);
   }
 };
 
-const getNote = async (req, res) => {
+const getNote = async (req, res, next) => {
   const { id } = req.params;
 
   try {
@@ -33,12 +32,11 @@ const getNote = async (req, res) => {
 
     return res.status(200).json(note);
   } catch (err) {
-    console.log(err);
-    return res.status(500).json({ err: true, msg: "Internal server error" });
+    next(err);
   }
 };
 
-const createNote = async (req, res) => {
+const createNote = async (req, res, next) => {
   const { title, content, authorName, isPublic } = req.body;
 
   if (!title || !content) {
@@ -54,12 +52,11 @@ const createNote = async (req, res) => {
 
     return res.status(201).json(createdNote);
   } catch (err) {
-    console.log(err);
-    return res.status(500).json("Internal server error");
+    next(err);
   }
 };
 
-const editNote = async (req, res) => {
+const editNote = async (req, res, next) => {
   const { id } = req.params;
   const { title, content, authorName, isPublic } = req.body;
 
@@ -94,12 +91,11 @@ const editNote = async (req, res) => {
 
     return res.status(200).json({ msg: "Note updated successfully", note });
   } catch (err) {
-    console.log(err);
-    return res.status(500).json("Internal server error");
+    next(err);
   }
 };
 
-const deleteNote = async (req, res) => {
+const deleteNote = async (req, res, next) => {
   const { id } = req.params;
 
   try {
@@ -115,8 +111,7 @@ const deleteNote = async (req, res) => {
       .status(200)
       .json({ msg: "Note deleted successfully", deletedNote });
   } catch (err) {
-    console.log(err);
-    return res.status(500).json("Internal server error");
+    next(err);
   }
 };
 

@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+import errorHandling from "./middleware/errorHandling.js";
 import notesRouter from "./routes/notes.js";
 dotenv.config();
 
@@ -9,6 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cors({ origin: "http://localhost:5173", credentials: true }));
 app.use("/api/notes", notesRouter);
+app.use(errorHandling);
 
 const port = Number(process.env.PORT) || 5000;
 app.listen(port, () => {
