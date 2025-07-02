@@ -44,6 +44,17 @@ const createNote = async (req, res, next) => {
       .status(400)
       .json({ err: true, msg: "You have to enter a title and content" });
   }
+  if (
+    title.trim().length > 15 ||
+    title.trim().length < 3 ||
+    content.trim().length > 100 ||
+    content.trim().length < 8
+  ) {
+    return res.status(400).json({
+      err: true,
+      msg: "You have to enter a title with the length between 2 and 15 characters. And a content with the length between 8 and 100 characters",
+    });
+  }
 
   try {
     const createdNote = await prisma.note.create({
