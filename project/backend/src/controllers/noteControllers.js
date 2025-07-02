@@ -107,9 +107,7 @@ const deleteNote = async (req, res, next) => {
       return res.status(404).json("Note not found");
     }
 
-    return res
-      .status(200)
-      .json({ msg: "Note deleted successfully", deletedNote });
+    return res.status(200).json({ msg: "Note deleted successfully" });
   } catch (err) {
     next(err);
   }
