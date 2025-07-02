@@ -99,4 +99,25 @@ const editNote = async (req, res) => {
   }
 };
 
-export default { getAllNotes, createNote, getNote, editNote };
+const deleteNote = async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    const deletedNote = await prisma.note.delete({
+      where: { id: parseInt(id) },
+    });
+
+    if (!deletedNote) {
+      return res.status(404).json("Note not found");
+    }
+
+    return res
+      .status(200)
+      .json({ msg: "Note deleted successfully", deletedNote });
+  } catch (err) {
+    console.log(err);
+    return res.status(500).json("Internal server error");
+  }
+};
+
+export default { getAllNotes, createNote, getNote, editNote, deleteNote };
