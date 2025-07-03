@@ -1,8 +1,26 @@
 import prisma from "../prisma-client.js";
 
 const getAllNotes = async (req, res, next) => {
+  const { title, content } = req.query;
+
   try {
+    // Title and content params
+    const filters = {};
+    if (title) {
+      filters.title = {
+        contains: title,
+        mode: "insensitive",
+      };
+    }
+    if (content) {
+      filters.content = {
+        contains: content,
+        mode: "insensitive",
+      };
+    }
+
     const notes = await prisma.note.findMany({
+      where: filters,
       orderBy: { createdAt: "desc" },
     });
 
@@ -71,26 +89,46 @@ const editNote = async (req, res, next) => {
   const { id } = req.params;
   const { title, content, authorName, isPublic } = req.body;
 
-  const isTitleValid = typeof title === "string" && title.trim() !== "";
-  const isContentValid = typeof content === "string" && content.trim() !== "";
+  const isTitleValid =
+    typeof title === "string" &&
+    title.trim().length < 15 &&
+    title.trim().length > 2;
+  const isContentValid =
+    typeof content === "string" &&
+    content.trim().length < 100 &&
+    content.trim().length > 8;
   const isAuthorNameValid =
-    typeof authorName === "string" && authorName.trim() !== "";
-  const isPublicValid = typeof isPublic === "boolean";
+    authorName !== undefined &&
+    typeof authorName === "string" &&
+    authorName.trim().length > 0;
+  const isPublicValid = isPublic !== undefined && typeof isPublic === "boolean";
 
-  if (!isTitleValid && !isContentValid && !isAuthorValid && !isPublicValid) {
+  const updatedFields = {};
+  isTitleValid ? (updatedFields.title = title) : "";
+  isContentValid ? (updatedFields.content = content) : "";
+  isAuthorNameValid ? (updatedFields.authorName = authorName) : "";
+  isPublicValid ? (updatedFields.isPublic = isPublic) : "";
+
+  // Title and content validation
+  if (!isTitleValid || !isContentValid) {
     return res.status(400).json({
       error: true,
-      msg: "You must provide at least one valid field (title, content, author or isPublic)",
+      msg: "Both title and content are required. Title must be 3-15 characters. Content must be 8-100 characters.",
+    });
+  }
+
+  // Author and isPublic validation
+  if (
+    (isPublic !== undefined && !isPublicValid) ||
+    (!isAuthorNameValid && authorName !== undefined)
+  ) {
+    return res.status(400).json({
+      error: true,
+      msg: "Invalid 'authorName' or 'isPublic' provided. Author name must be a non-empty string. isPublic must be a boolean.",
     });
   }
 
   try {
-    const updatedFields = {};
-    isTitleValid ? (updatedFields.title = title) : "";
-    isContentValid ? (updatedFields.content = content) : "";
-    isAuthorNameValid ? (updatedFields.authorName = authorName) : "";
-    isPublicValid ? (updatedFields.isPublic = isPublic) : "";
-
     const note = await prisma.note.update({
       where: { id: parseInt(id) },
       data: updatedFields,
